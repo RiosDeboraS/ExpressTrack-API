@@ -6,7 +6,7 @@ const vehicleRouter = require("./src/routes/vehiclesrouter");
 require("dotenv").config();
 const routes = require("./src/routes/routes");
 const asignarRepartidorRouter = require("./src/routes/asignarRepartidorRoute");
-const userRoutes = require("./src/Routes/userRouter");
+const userRoutes = require("./src/routes/userRouter");
 const getAllRoutes = require("./src/routes/getRoutes");
 const deleteRoutes = require("./src/routes/deleteRouter");
 const socketIO = require("socket.io"); // Import socketIO
