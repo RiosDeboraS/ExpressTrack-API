@@ -10,7 +10,7 @@ const userRoutes = require("./src/routes/userRouter");
 const getAllRoutes = require("./src/routes/getRoutes");
 const deleteRoutes = require("./src/routes/deleteRouter");
 const socketIO = require("socket.io"); // Import socketIO
-const welcomeText = require("./welcome");
+const getWelcomeMessage = require("./welcome");
 
 const app = express();
 
