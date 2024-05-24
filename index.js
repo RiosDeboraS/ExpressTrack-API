@@ -2,13 +2,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const vehicleRouter = require("./routes/vehiclesrouter");
+const vehicleRouter = require("./src/routes/vehiclesrouter");
 require("dotenv").config();
-const routes = require("./routes/routes");
-const asignarRepartidorRouter = require("./Routes/asignarRepartidorRoute");
-const userRoutes = require("./Routes/userRouter");
-const getAllRoutes = require("./Routes/getRoutes");
-const deleteRoutes = require("./Routes/deleteRouter");
+const routes = require("./src/routes/routes");
+const asignarRepartidorRouter = require("./src/Routes/asignarRepartidorRoute");
+const userRoutes = require("./src/Routes/userRouter");
+const getAllRoutes = require("./src/Routes/getRoutes");
+const deleteRoutes = require("./src/Routes/deleteRouter");
 const socketIO = require("socket.io"); // Import socketIO
 
 const app = express();
