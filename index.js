@@ -10,6 +10,7 @@ const userRoutes = require("./src/routes/userRouter");
 const getAllRoutes = require("./src/routes/getRoutes");
 const deleteRoutes = require("./src/routes/deleteRouter");
 const socketIO = require("socket.io"); // Import socketIO
+const welcomeText = require("./welcome");
 
 const app = express();
 
@@ -20,7 +21,8 @@ const server = app.listen(3000, () =>
 const io = socketIO(server);
 
 app.get("/", (req, res) => {
-  res.send("¡Hola! Estoy funcionando.");
+  const welcomeText = getWelcomeMessage(req, res);
+  res.send(welcomeText);
 });
 app.use(bodyParser.json());
 
