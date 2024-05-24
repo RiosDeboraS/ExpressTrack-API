@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const vehicleRouter = require("./routes/vehiclesrouter");
 require("dotenv").config();
-const routes = require("./Routes/routes");
+const routes = require("./routes/routes");
 const asignarRepartidorRouter = require("./Routes/asignarRepartidorRoute");
 const userRoutes = require("./Routes/userRouter");
 const getAllRoutes = require("./Routes/getRoutes");
