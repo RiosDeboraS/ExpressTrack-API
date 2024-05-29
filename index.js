@@ -9,13 +9,21 @@ const asignarRepartidorRouter = require("./src/routes/asignarRepartidorRoute");
 const userRoutes = require("./src/routes/userRouter");
 const getAllRoutes = require("./src/routes/getRoutes");
 const deleteRoutes = require("./src/routes/deleteRouter");
-const socketIO = require("socket.io"); // Import socketIO
+const socketIO = require("socket.io");
+const cors = require("cors");
 const getWelcomeMessage = require("./welcome");
 
 const app = express();
 
 const server = app.listen(3000, () =>
   console.log("¡Hola! Estoy funcionando correctamente.")
+);
+
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
 );
 
 const io = socketIO(server);
