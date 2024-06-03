@@ -23,6 +23,20 @@ json
 
 
 
+## Activar Usuario Manual desde panel
+
+### Endpoint
+PUT http://localhost:3000/user/create](http://localhost:3000/user/activate/:id
+
+
+### Body
+json
+{
+   "estado": "activo"
+}
+
+
+###Nota: se podria activar mediante confirmacion y validacion de email. 
 
 ## Crear Ruta
 ### Endpoint
