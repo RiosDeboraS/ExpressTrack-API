@@ -98,6 +98,21 @@ json
   "fecha_mantenimiento": "2024-05-24"
 }
 
+
+## Asignar Vehiculo a Repartidor
+### Endpoint
+POST http://localhost:3000/vehicles/asignar
+
+### Body
+json
+{
+ "_id": "665dbc6ec9ec95e1741b207d",
+ "repartidorId": "665db685a5418f5d830ed6cf"
+}
+
+
+
+
 ## Obtener vehiculos
 ### Endpoint
 GET http://localhost:3000/vehicles
