@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
   },
   apellido: {
     type: String,
-    required: true,
+    required: false,
   },
   email: {
     type: String,
@@ -20,13 +20,13 @@ const userSchema = new mongoose.Schema({
   },
   dni: {
     type: String,
-    required: true,
+    required: false,
     unique: true,
   },
   rol: {
     type: String,
     enum: ["administrador", "repartidor"],
-    required: true,
+    required: false,
   },
   fecha_registro: {
     type: Date,
@@ -57,7 +57,7 @@ const userSchema = new mongoose.Schema({
     default: null,
   },
   datos_de_contacto: {
-    telefono:{
+    telefono: {
       type: Number,
       required: false,
     },
