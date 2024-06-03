@@ -14,13 +14,12 @@ POST http://localhost:3000/user/create
 ### Body
 json
 {
-  "nombre": "Juan",
-  "apellido": "Perez",
-  "email": "juan.perez@example.com",
-  "contrasena": "password123",
-  "dni": "12345678",
-  "rol": "administrador"
+  "nombre": "Juan", 
+  "email": "juan1.perez@example.com", 
+"contrasena": "password123"
 }
+
+###Nota: el usuario creado es de rol repartidor por default
 
 
 
