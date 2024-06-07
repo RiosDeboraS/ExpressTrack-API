@@ -26,7 +26,8 @@ const userSchema = new mongoose.Schema({
   rol: {
     type: String,
     enum: ["administrador", "repartidor"],
-    required: false,
+    default: "repartidor",
+    required: true,
   },
   fecha_registro: {
     type: Date,

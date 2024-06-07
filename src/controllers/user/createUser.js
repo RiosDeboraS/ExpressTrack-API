@@ -7,10 +7,10 @@ const createUser = async (req, res) => {
     const { nombre, email, contrasena, cod_contrasena, datos_de_contacto } =
       req.body;
 
-    let role = req.session?.adminRole;
+    let rol = req.session?.adminRole;
 
-    if (!role) {
-      role = "repartidor";
+    if (!rol) {
+      rol = "repartidor";
     }
 
     if (!(nombre || email || contrasena)) {

@@ -7,7 +7,7 @@ const activateUser = async(req,res) => {
         if (!user) {
             return res.status(404).json({message: "Usuario no encontrado"})
         }
-        user.estado = "activo"
+        user.estado = user.estado === "inactivo" ? "activo" : "inactivo";
         await user.save()     
         return res.status(200).json({message: "Usuario activado"})
     } catch (error) {
