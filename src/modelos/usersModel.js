@@ -18,11 +18,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  dni: {
-    type: String,
-    required: false,
-    unique: true,
-  },
+
   rol: {
     type: String,
     enum: ["administrador", "repartidor"],
