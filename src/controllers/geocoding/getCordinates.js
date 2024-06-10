@@ -11,7 +11,7 @@ const getCoordinates = async (req, res) => {
         const data = await opencage.geocode({ q: address, key: process.env.OPENCAGE_API_KEY });
 
         if (data.status.code === 200 && data.results.length > 0) {
-            const coordinates = data;
+            const coordinates = data.results[0].geometry;
             res.json(coordinates);
         } else {
             throw new Error('Address not found');

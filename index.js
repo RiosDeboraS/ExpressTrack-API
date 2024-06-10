@@ -9,6 +9,7 @@ const asignarRepartidorRouter = require("./src/routes/asignarRepartidorRoute");
 const userRoutes = require("./src/routes/userRouter");
 const getAllRoutes = require("./src/routes/getRoutes");
 const deleteRoutes = require("./src/routes/deleteRouter");
+const geocodingRouter = require("./src/routes/geocodingRouter");
 const socketIO = require("socket.io");
 const cors = require("cors");
 const getWelcomeMessage = require("./welcome");
@@ -42,6 +43,7 @@ app.use("/api/rutas", getAllRoutes);
 app.use("/api", deleteRoutes);
 app.use("/user", userRoutes);
 app.use("/vehicles", vehicleRouter);
+app.use("/geocoding", geocodingRouter )
 
 mongoose
   .connect(process.env.MONGOSE_URI)
