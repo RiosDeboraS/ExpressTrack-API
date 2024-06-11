@@ -8,8 +8,10 @@ _npm start_
 ## Crear Usuario
 
 ### Endpoint
-POST http://localhost:3000/user/create
-
+POST 
+```
+http://localhost:3000/user/create
+```
 
 ### Body
 json
@@ -26,8 +28,11 @@ json
 ## Activar Usuario Manual desde panel
 
 ### Endpoint
-PUT http://localhost:3000/user/create](http://localhost:3000/user/activate/:id
 
+PUT 
+```
+http://localhost:3000/user/create](http://localhost:3000/user/activate/:id
+```
 
 ### Body
 json
